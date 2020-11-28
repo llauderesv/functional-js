@@ -16,3 +16,7 @@ export const warn = (message: string) => {
 export const existy = (a: any) => {
   return !_.isUndefined(a) && !_.isNull(a);
 };
+
+export const doWhen = (cond, func) => {
+  return cond && func();
+};
